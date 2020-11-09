@@ -54,7 +54,7 @@ downloadButton.addEventListener('click', () => {
   
   var oData = new FormData(form);
 
-  oData.append("testvid", blob);
+  oData.append("testvid", blob, 'test.webm');
 
   var oReq = new XMLHttpRequest();
   oReq.open("POST", "stash.php", true);
